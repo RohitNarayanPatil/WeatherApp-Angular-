@@ -39,7 +39,7 @@
         <span>city</span>
       </div> -->
   <div class="infoblocklabel">
-    <img src="../assets/temperatutre.jpg" alt="Temperature" width="30%" *ngIf="showImage">
+    <!-- <img src="../assets/temperatutre.jpg" alt="Temperature" width="30%" *ngIf="showImage"> -->
     <img *ngIf="weatherData && weatherData.current && weatherData.current.condition && weatherData.current.condition.icon"
          [src]="weatherData.current.condition.icon" alt="Weather Condition" width="30%">
     <span>Climate</span>
@@ -54,31 +54,31 @@
   
     <div class="infoblock">
       <div class="infoblocklabel">
-        <img src="../assets/time.png" alt="" width="10%">
-        <span>Time</span>
+        <!-- <img src="../assets/time.png" alt="" width="10%"> -->
+        <span>Temperature</span>
       </div>
       <div class="infoblockvalue">
         <!-- {{responseData.current.time}} -->
-        {{weatherData.current.temp_c}}°C
+        {{weatherData.current.temp_c}} °C
       </div>
     </div>
   
     <div class="infoblock">
       <div class="infoblocklabel">
-        <img src="../assets/time.png" alt="" width="10%">
+        <!-- <img src="../assets/time.png" alt="" width="10%"> -->
         <span>wind speed</span>
       </div>
       <div class="infoblockvalue">
        <!-- {{responseData.timezone}} -->
   
        
-       {{ weatherData.current.wind_kph}}km/h
+       {{ weatherData.current.wind_kph}} km/h
       </div>
     </div>
   
     <div class="infoblock">
       <div class="infoblocklabel">
-        <img src="../assets/wind.jpg" alt="" width="10%">
+        <!-- <img src="../assets/wind.jpg" alt="" width="10%"> -->
         <span>Humidity</span>
       </div>
       <div class="infoblockvalue">
